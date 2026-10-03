@@ -17,7 +17,9 @@ function updateContact(contact) {
  document.querySelectorAll('a[href^="tel:"]').forEach(a=>{a.href='tel:+'+contact.phoneDigits;a.textContent=contact.phoneDisplay;});
  document.querySelectorAll('a[href*="wa.me/"]').forEach(a=>{
   const query=new URL(a.href).search;
-  a.href='https://wa.me/'+contact.phoneDigits+query;
+  const digits=String(contact.phoneDigits||'').replace(/\D/g,'');
+  const whatsappDigits=digits==='5551998648724'?'555198648724':digits;
+  a.href='https://wa.me/'+whatsappDigits+query;
  });
  document.querySelectorAll('a[href*="instagram.com"],a[data-contact-link="instagram"]').forEach(a=>{
   a.href=contact.instagramUrl;

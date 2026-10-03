@@ -13,7 +13,7 @@ for(const [key,s] of Object.entries(serviceDefaults)){
  let html=await readFile(path,'utf8');
  const icon=html.match(/<div class="service-hero-icon">([\s\S]*?)<\/div>/)[1];
  const benefitIcons=[...html.matchAll(/<div class="feature-icon">([\s\S]*?)<\/div>/g)].map(m=>m[1]);
- const link='https://wa.me/5551998648724?text='+encodeURIComponent('Olá! Gostaria de agendar '+s.title.toLowerCase()+'.');
+ const link='https://wa.me/555198648724?text='+encodeURIComponent('Olá! Gostaria de agendar '+s.title.toLowerCase()+'.');
  const image=`assets/servico-${key}.webp`;
  const picture=(indication=false,lazy=false)=>`<img src="${image}" data-media="${key}${indication?'Indication':''}" alt="${esc(s.title)} — imagem ilustrativa do atendimento" width="1440" height="960" srcset="${image.replace('.webp','-640.webp')} 640w, ${image} 1440w" sizes="(max-width:700px) calc(100vw - 40px), 560px" decoding="async" ${indication||lazy?'loading="lazy"':'fetchpriority="high"'}/>`;
  const main=`<main class="service-page" data-service-page="${key}">
@@ -42,7 +42,7 @@ for(const [key,s] of Object.entries(serviceDefaults)){
  html=html.replace(/<main[\s\S]*?<\/main>/,main);
  html=html.replace(/<link rel="stylesheet" href="(?:redesign|indication|refinements)\.css[^\"]*"\s*\/>/g,'');
  html=html.replace('</head>','<link rel="stylesheet" href="redesign.css?v=5"/><link rel="stylesheet" href="indication.css?v=2"/><link rel="stylesheet" href="refinements.css?v=15"/></head>');
- html=html.replace(/<script src="script.js[^\"]*"><\/script>/,'<script src="script.js?v=14"></script>');
+ html=html.replace(/<script src="script.js[^\"]*"><\/script>/,'<script src="script.js?v=15"></script>');
  const home=await readFile(new URL('../dist/index.html',import.meta.url),'utf8');
  const footer=home.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)[0].replace(/href="#/g,'href="index.html#');
  html=html.replace(/<footer class="site-footer">[\s\S]*?<\/footer>/,footer);
