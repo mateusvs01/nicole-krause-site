@@ -1,0 +1,127 @@
+ATUALIZAÇÃO DO SITE — NICOLE KRAUSE
+
+1. Extraia o ZIP no computador.
+2. Abra o repositório do GitHub que está ligado ao seu site atual na Netlify.
+3. Envie o conteúdo extraído, preservando as pastas dist, netlify, scripts e tests.
+   Na raiz devem aparecer netlify.toml, package.json e package-lock.json.
+   Não envie o ZIP fechado e não coloque tudo dentro de uma pasta extra.
+4. Confirme o envio no GitHub. Aguarde o novo deploy da Netlify terminar.
+   A pasta de publicação deve ser dist; as funções ficam em netlify/functions.
+   Enviar apenas dist pelo arrastar-e-soltar não publica as funções do admin.
+5. Abra o site e atualize a página sem cache (Ctrl+Shift+R).
+
+ACESSO E SENHA
+Acesse /admin/ no endereço do site. Não existe senha padrão no pacote.
+Use o e-mail convidado pelo Netlify Identity, configurado como Invite only.
+Clique em Entrar no painel e Forgot password? para receber um NOVO e-mail.
+O pacote encaminha os links de recuperação e convite da página inicial
+para o painel, onde o widget de acesso solicita a senha.
+Se o e-mail abrir outro domínio, confira a URL do site nas configurações
+do Identity. Links antigos podem ter expirado; solicite um novo.
+A entrega não altera contas, senhas ou configurações da sua Netlify.
+
+FOTOS E TEXTOS
+No admin, use Fotos do site para trocar a abertura e o Sobre mim.
+Cada serviço tem sua própria foto de atendimento e foto de indicações.
+A foto do atendimento aparece na abertura do serviço e em Como funciona.
+A seção Para quem é indicada tem sua própria foto, também editável no admin.
+JPG, PNG e WebP são aceitos; o painel otimiza o envio.
+Ajuste o enquadramento horizontal e clique em Salvar alterações.
+A mulher de jaleco roxo é uma imagem ilustrativa gerada por IA, não a Nicole.
+Você pode substituí-la por uma foto real. O bordado NK é uma aproximação.
+Em Depoimentos, adicione, edite, oculte, exclua e envie/remova fotos opcionais.
+Os depoimentos de exemplo devem ser substituídos por relatos autorizados
+de clientes reais antes de usar o site comercialmente.
+Textos do site e Contato e redes permitem alterar as informações principais.
+Conteúdos já salvos na Netlify são preservados e prevalecem sobre o padrão
+deste pacote. Para mudar um texto antigo, edite e salve pelo painel.
+
+VERIFICAÇÃO
+17 testes automatizados passaram, incluindo recuperação de links,
+validação de imagens e recusa de gravação sem autenticação.
+O login, os e-mails e a persistência precisam ser conferidos no seu deploy.
+A conferência visual no navegador não foi concluída neste ambiente.
+Confira as páginas no computador e no celular depois da publicação.
+
+IMAGENS GERADAS
+Ferramenta de geração integrada, sem API externa configurada pelo usuário.
+Abertura: fotografia de massagem profissional, cliente adulta com toalhas,
+rosto à direita, luz natural, tons creme e rosados, sem texto.
+Sobre mim: profissional adulta fictícia, jaleco lavanda com NK MASSAGENS,
+sorriso natural, ambiente de spa creme e rosado.
+Arquivos: dist/assets/massagem-hero.webp e dist/assets/sobre-jaleco-roxo.webp.
+
+AJUSTES VISUAIS — 23/09
+Menu com sublinhado que acompanha a seleção e a rolagem das seções.
+Ícones maiores e com traço reforçado; legendas e textos de apoio maiores.
+Chamadas finais dos serviços em retângulos rosados com a folhagem inteira.
+Foto de indicações contida e encostada à direita, com degradê à esquerda.
+Balão rosado arredondado e escrita sobre área branca suave nas aberturas.
+Bordas das fotos suavizadas. Atualize com Ctrl+Shift+R depois do deploy.
+A prévia local foi bloqueada por uma restrição de acesso do navegador.
+Por isso, a conferência visual final depende da publicação.
+
+NOVA REVISÃO VISUAL
+Ícones em rosé escuro, igual ao botão Agendar.
+Cantos direitos arredondados nas fotos de abertura.
+Transição mais suave da foto ao fundo de Para quem é indicada.
+Bloco Antes do atendimento removido das quatro páginas de serviços.
+Benefícios identificados e depoimentos do admin em todos os serviços.
+
+REVISÃO MOBILE E NAVEGAÇÃO ENTRE SERVIÇOS
+Cada serviço termina com três cartões para conhecer os outros serviços.
+Menu mobile com espaço para o calendário e o texto Agendar.
+Rodapé padronizado com logo, navegação, contatos e créditos centralizados.
+Botões de agendamento abaixo das fotos de abertura no celular.
+Ícones de destaque abaixo da abertura, sem posicionamento sobre a imagem.
+Fotos de abertura com a mesma proporção 3:2 e cantos direitos arredondados.
+Frases com fundo branco mais suave e balão de indicações assimétrico.
+Conferência estrutural concluída; aparência no navegador ainda não validada.
+
+OTIMIZAÇÃO DE IMAGENS
+Fotos em WebP com versões de 640 pixels para celular.
+Logo com transparência; ícones e folhas em SVG.
+Fotos abaixo da abertura usam carregamento adiado.
+Novas fotos enviadas pelo admin também são comprimidas em WebP.
+Fotos já enviadas à Netlify não são recomprimidas automaticamente.
+Endereços antigos das imagens padrão redirecionam para os arquivos novos.
+A redução de cerca de 95% refere-se ao peso das imagens do pacote,
+não a uma medição de velocidade do site publicado.
+
+CADASTRO DE NOVOS SERVIÇOS
+Após publicar este pacote completo, abra Admin > Serviços > Novo serviço.
+Preencha nome, chamada, descrição, benefícios, etapas, indicações e frase.
+Cada etapa deve ocupar uma linha no formato Título | Descrição.
+Escolha um ícone. Em Fotos do site, envie as duas fotos desse serviço.
+Clique em Salvar alterações. O novo serviço aparece na inicial e nos cartões
+Conheça os outros serviços, com página própria. Não precisa de novo deploy.
+O limite é de 20 serviços no total. Os quatro serviços existentes são preservados.
+A ordem final é Continue seu cuidado, Depoimentos e Pronta para se sentir melhor.
+O caminho Início > Serviços > Nome fica abaixo da abertura.
+22 testes automatizados passaram. Testes de armazenamento usam simulação;
+o acesso real e a conferência visual dependem do deploy na sua Netlify.
+
+ALTURA DAS FOTOS DE ABERTURA
+Fotos de abertura aumentadas de 420 para 492 pixels no computador.
+Em telas intermediárias, de 380 para 472 pixels.
+O espaço superior padrão entre o menu e a imagem cai de 50 para 14 pixels
+no computador, sem aumentar a altura total da abertura.
+Aplicado à inicial, aos quatro serviços e ao modelo dos novos serviços.
+
+REVISÃO DE ÍCONES E MENU
+Depoimentos permanece selecionado após clicar, mesmo perto do fim da página.
+A marcação por posição volta quando você rola manualmente.
+Ícones SVG redesenhados: mãos, lótus, vento, gota, folha e coração.
+No computador, os três destaques ficam sob Agende seu horário, à esquerda da foto.
+No celular, ficam logo abaixo do botão na sequência vertical.
+
+REVISÃO MOBILE
+Conhecer serviço aparece nos cartões da inicial também no celular.
+Ícone do WhatsApp do rodapé substituído por um SVG de silhueta nítida.
+
+Atualização: menu Início > Serviços > Sobre; ícones personalizados por serviço no admin (PNG/WebP/JPG, otimizados com transparência preservada); menu do painel maior com ícones vetoriais; painel com sombras; títulos padronizados por nível; depoimentos com avanço automático a cada 5,5 segundos quando excederem 3 no computador ou 1 no celular, controles e pausa. Mantidas correções de Conhecer serviço no celular e WhatsApp.
+Envie o conteúdo completo, incluindo netlify/functions e scripts. A validação automatizada passou; confira o visual depois do deploy.
+
+Correção: imagens aguardam a configuração salva no admin e o carregamento da foto antes de aparecer, evitando a exibição rápida da foto padrão ao atualizar.
+
+Painel administrativo em tela cheia, sem margem, moldura ou sombra externa. Tela de entrada renovada com cartão central, fundo rosé e sombra suave. Ícones mantidos.

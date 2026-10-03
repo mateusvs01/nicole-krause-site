@@ -1,0 +1,217 @@
+{
+  "version": 3,
+  "services": {
+    "therapeutic": {
+      "slug": "massagem-terapeutica",
+      "title": "Massagem Terapêutica",
+      "subtitle": "Alívio para o seu corpo, mais conforto para o seu dia.",
+      "intro": "Uso técnicas manuais e ajusto a pressão às suas necessidades para cuidar das regiões de maior tensão. Antes de começar, converso com você e preparo uma sessão voltada ao seu conforto e bem-estar.",
+      "benefits": [
+        "Cuidado com as tensões",
+        "Pressão personalizada",
+        "Conforto nos movimentos",
+        "Mais bem-estar"
+      ],
+      "steps": [
+        [
+          "Avaliação",
+          "Converso com você sobre suas necessidades e pontos de tensão."
+        ],
+        [
+          "Técnica personalizada",
+          "Ajusto as manobras e a intensidade ao seu conforto."
+        ],
+        [
+          "Bem-estar",
+          "Finalizo com um cuidado pensado para sua rotina."
+        ]
+      ],
+      "indications": [
+        "Quem sente tensão muscular no dia a dia.",
+        "Quem passa muito tempo na mesma posição.",
+        "Quem busca relaxar após uma rotina intensa.",
+        "Quem deseja um atendimento personalizado.",
+        "Quem quer reservar um momento de autocuidado."
+      ],
+      "quote": "Um momento de cuidado para um corpo mais leve.",
+      "note": "Se você tem dor intensa, lesão recente ou alguma condição de saúde, me avise antes da sessão. A massagem não substitui uma avaliação médica."
+    },
+    "relaxing": {
+      "slug": "massagem-relaxante",
+      "title": "Massagem Relaxante",
+      "subtitle": "Uma pausa para desacelerar e cuidar de você.",
+      "intro": "Combino movimentos suaves e ritmados em um ambiente acolhedor. Respeito suas preferências de pressão para oferecer um momento de tranquilidade, descanso e atenção ao seu corpo.",
+      "benefits": [
+        "Movimentos suaves",
+        "Uma pausa na rotina",
+        "Relaxamento",
+        "Cuidado acolhedor"
+      ],
+      "steps": [
+        [
+          "Acolhimento",
+          "Escuto como você está e o que espera desse momento."
+        ],
+        [
+          "Ritmo tranquilo",
+          "Uso movimentos contínuos e pressão confortável."
+        ],
+        [
+          "Sua pausa",
+          "Respeito seu tempo para encerrar a sessão com tranquilidade."
+        ]
+      ],
+      "indications": [
+        "Quem deseja desacelerar a rotina.",
+        "Quem busca um momento de descanso.",
+        "Quem prefere uma massagem suave.",
+        "Quem sente tensões leves do dia a dia.",
+        "Quem quer incluir o autocuidado na rotina."
+      ],
+      "quote": "Desacelere. Este momento é seu.",
+      "note": "Me informe sobre gestação, cirurgia recente ou alguma condição de saúde antes do atendimento, para que eu possa orientar o cuidado adequado."
+    },
+    "cupping": {
+      "slug": "ventosaterapia",
+      "title": "Ventosaterapia",
+      "subtitle": "Um cuidado complementar, pensado para você.",
+      "intro": "Utilizo ventosas com sucção controlada como parte de um atendimento personalizado. Converso com você antes da aplicação e acompanho sua sensibilidade durante toda a sessão.",
+      "benefits": [
+        "Sucção controlada",
+        "Atenção à sensibilidade",
+        "Abordagem individual",
+        "Cuidado complementar"
+      ],
+      "steps": [
+        [
+          "Conversa inicial",
+          "Avalio suas necessidades e se a técnica é adequada para você."
+        ],
+        [
+          "Aplicação cuidadosa",
+          "Posiciono as ventosas e controlo a sucção conforme seu conforto."
+        ],
+        [
+          "Orientações",
+          "Explico os cuidados após a sessão e tiro suas dúvidas."
+        ]
+      ],
+      "indications": [
+        "Quem deseja conhecer uma técnica complementar.",
+        "Quem busca um cuidado voltado às tensões.",
+        "Quem prefere um atendimento individualizado.",
+        "Quem recebeu orientação de que a técnica é adequada.",
+        "Quem quer conversar sobre outras formas de autocuidado."
+      ],
+      "quote": "Cada detalhe do cuidado respeita você.",
+      "note": "As ventosas podem deixar marcas temporárias. Me informe sobre medicamentos, alterações de pele e condições de saúde para avaliarmos a adequação da técnica."
+    },
+    "drainage": {
+      "slug": "drenagem-linfatica",
+      "title": "Drenagem Linfática",
+      "subtitle": "Delicadeza em cada movimento. Um momento de leveza.",
+      "intro": "Trabalho com movimentos leves, lentos e ritmados. Antes da sessão, converso com você sobre o motivo da procura e suas condições de saúde para definir um cuidado adequado e delicado.",
+      "benefits": [
+        "Toque delicado",
+        "Movimentos ritmados",
+        "Cuidado individual",
+        "Sensação de leveza"
+      ],
+      "steps": [
+        [
+          "Avaliação inicial",
+          "Converso sobre suas necessidades e possíveis restrições."
+        ],
+        [
+          "Movimentos suaves",
+          "Aplico a técnica com pressão leve e ritmo tranquilo."
+        ],
+        [
+          "Cuidado contínuo",
+          "Oriento você sobre o atendimento e os próximos passos."
+        ]
+      ],
+      "indications": [
+        "Quem busca uma técnica de toque leve.",
+        "Quem deseja uma sensação de leveza.",
+        "Quem recebeu indicação para drenagem manual.",
+        "Quem quer um atendimento adaptado às suas necessidades.",
+        "Quem procura orientação antes de iniciar as sessões."
+      ],
+      "quote": "Mais leveza, com delicadeza e atenção.",
+      "note": "Nem todo inchaço tem indicação de drenagem. Me informe sobre condições de saúde e orientações médicas antes de agendar."
+    }
+  },
+  "media": {
+    "therapeutic": "/assets/servico-therapeutic.webp",
+    "therapeuticPosition": 50,
+    "therapeuticIndication": "/assets/servico-therapeutic.webp",
+    "therapeuticIndicationPosition": 50,
+    "relaxing": "/assets/servico-relaxing.webp",
+    "relaxingPosition": 50,
+    "relaxingIndication": "/assets/servico-relaxing.webp",
+    "relaxingIndicationPosition": 50,
+    "cupping": "/assets/servico-cupping.webp",
+    "cuppingPosition": 50,
+    "cuppingIndication": "/assets/servico-cupping.webp",
+    "cuppingIndicationPosition": 50,
+    "drainage": "/assets/servico-drainage.webp",
+    "drainagePosition": 50,
+    "drainageIndication": "/assets/servico-drainage.webp",
+    "drainageIndicationPosition": 50,
+    "indication": "/assets/indicacao-toalha.webp",
+    "indicationPosition": 60,
+    "hero": "/assets/massagem-hero.webp",
+    "about": "/assets/sobre-jaleco-roxo.webp",
+    "heroPosition": 70,
+    "aboutPosition": 50
+  },
+  "updatedAt": null,
+  "texts": {
+    "heroEyebrow": "Cuidar de você também é essencial",
+    "heroTitle": "Massagem que equilibra corpo, mente e bem-estar.",
+    "heroText": "Uso técnicas personalizadas para aliviar tensões, reduzir o estresse e renovar suas energias.",
+    "servicesTitle": "Técnicas que cuidam de você",
+    "servicesIntro": "Em cada massagem, ofereço um cuidado único, com foco no seu bem-estar e nas suas necessidades.",
+    "therapeuticDescription": "Ajuda a aliviar tensões e desconfortos musculares, favorecendo mobilidade e bem-estar.",
+    "relaxingDescription": "Movimentos suaves e ritmados para desacelerar, reduzir o estresse e promover tranquilidade.",
+    "cuppingDescription": "Técnica complementar com sucção controlada para promover relaxamento e alívio de tensões.",
+    "drainageDescription": "Movimentos leves e precisos que auxiliam o fluxo linfático e proporcionam sensação de leveza.",
+    "aboutTitle": "Nicole Krause Massagista",
+    "aboutParagraph1": "Sou apaixonada por promover bem-estar através do toque. Acredito que cada corpo tem uma história e merece um cuidado especial.",
+    "aboutParagraph2": "Meu trabalho é proporcionar equilíbrio, conforto e qualidade de vida com técnicas seguras e personalizadas para cada pessoa.",
+    "benefitsTitle": "Seu corpo agradece",
+    "benefitsIntro": "O atendimento adequado pode contribuir para mais conforto, descanso e bem-estar na rotina.",
+    "ctaTitle": "Cuide de você hoje.",
+    "ctaText": "Estou aqui para cuidar do seu bem-estar. Fale comigo e agende seu horário."
+  },
+  "contact": {
+    "phoneDisplay": "(51) 99864-8724",
+    "phoneDigits": "5551998648724",
+    "instagramHandle": "@nk_massagens",
+    "instagramUrl": "https://www.instagram.com/nk_massagens/"
+  },
+  "testimonials": [
+    {
+      "id": "mariana",
+      "name": "Mariana S.",
+      "text": "A massagem da Nicole é incrível! Saio sempre renovada e sem dores.",
+      "stars": 5,
+      "visible": true
+    },
+    {
+      "id": "lidia",
+      "name": "Lídia B.",
+      "text": "Profissional atenciosa e muito competente. Recomendo de olhos fechados!",
+      "stars": 5,
+      "visible": true
+    },
+    {
+      "id": "fernanda",
+      "name": "Fernanda R.",
+      "text": "Ambiente acolhedor, mãos que realmente fazem a diferença.",
+      "stars": 5,
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.app{max-width:none;margin:0;border:0;border-radius:0;overflow:visible;min-height:100vh;box-shadow:none}.topbar{position:sticky;top:0;z-index:30;height:84px}.layout{grid-template-columns:230px minmax(0,1fr);min-height:calc(100vh - 84px)}.sidebar{position:sticky;top:84px;height:calc(100vh - 84px);overflow-y:auto;align-self:start}.sidebar nav{display:grid}.sidebar nav button{white-space:normal;text-align:left}.sidebar-toggle,.sidebar-backdrop{display:none}.load-error{padding:20px;border:1px solid #e3aab2;background:#fff0f1;border-radius:16px;margin-bottom:22px;color:#7c2e3b}.load-error p{color:inherit;margin-bottom:12px}.services-editor-heading{margin:32px 0 18px}.service-editor{margin-bottom:14px}.service-editor summary{cursor:pointer;font-family:Georgia,serif;font-size:24px}.service-editor .fields{margin-top:22px}.photo-preview{object-fit:contain;background:#fcf7f4}.photo-grid .field{margin-bottom:15px}.photo-grid h2{font-size:23px}.sidebar nav button:focus-visible{outline:2px solid #a6535b;outline-offset:2px}
+@media(max-width:1000px){.layout{grid-template-columns:200px minmax(0,1fr)}}
+@media(max-width:760px){.topbar{height:78px;gap:9px;padding:10px 12px}.topbar .brand{gap:7px}.topbar .brand img{width:48px}.topbar .brand strong{font-size:13px}.topbar .brand span{font-size:11px}.topbar .account .button{display:none}.sidebar-toggle{display:inline-flex;flex:0 0 40px;width:40px;padding:8px;font-size:22px;background:#fff8f7}.layout{display:block}.sidebar{display:block;position:fixed;z-index:25;top:78px;bottom:0;left:0;width:240px;height:calc(100dvh - 78px);padding:24px 14px;background:#faeeee;border-right:1px solid var(--line);border-bottom:0;transform:translateX(-100%);transition:transform .2s ease}.sidebar-open .sidebar{transform:translateX(0)}.sidebar>.kicker,.sidebar-note{display:block}.sidebar nav{display:grid;overflow:visible;gap:8px}.sidebar nav button{width:100%;font-size:15px;min-height:46px;justify-content:flex-start}.sidebar-open .sidebar-backdrop{display:block;position:fixed;inset:78px 0 0;border:0;border-radius:0;background:#30242655;z-index:24;width:100%;height:calc(100dvh - 78px)}main{padding:24px 16px}.heading{flex-direction:column;align-items:stretch}.heading .primary{width:100%}.fields,.photo-grid{grid-template-columns:1fr}.account{margin-left:auto}.overview-grid,.review-workspace{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.sidebar{transition:none}}
+
+/* A quieter canvas, readable navigation and elevated editing panels. */
+body{background:radial-gradient(ellipse at top left,#efdbdf,transparent 60%),#f5edec}
+.app{max-width:1500px;margin:24px auto;border:1px solid #ead8d9;border-radius:24px;background:#fcf9f8;box-shadow:0 24px 80px #60313e24;min-height:calc(100vh - 48px)}
+.topbar{border-radius:24px 24px 0 0;background:#fffaf9ed;box-shadow:0 4px 20px #64323d08}
+.sidebar{background:linear-gradient(180deg,#f8ebed,#fcf5f4);border-radius:0 0 0 24px}
+.layout{grid-template-columns:260px minmax(0,1fr)}
+.sidebar nav{gap:10px}.sidebar nav button{font-size:17px;font-weight:600;min-height:54px;gap:12px;padding:12px;color:#73555b;border-radius:14px}
+.sidebar nav button svg,.quick-actions button svg{width:25px;height:25px;flex:0 0 25px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.sidebar nav button.active{background:#984954;color:white;box-shadow:0 7px 18px #98495428}.sidebar nav button:hover:not(.active){background:#f0dce0;color:#7d3840}
+.card,.stats article{box-shadow:0 8px 28px #60313e0b;border-color:#eddeDF}.login-card{box-shadow:0 24px 80px #60313e29}
+main h1{font:400 34px/1.15 Georgia,serif}main h2,.photo-grid h2,.service-editor summary{font:400 25px/1.2 Georgia,serif;letter-spacing:-.025em}
+.custom-icon-preview{width:72px;height:72px;object-fit:contain;padding:8px;border:1px solid var(--line);border-radius:14px;background:#f8eeee}
+.field small{line-height:1.5}.account{min-width:0}.account span{max-width:220px;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:1000px){.app{margin:12px;min-height:calc(100vh - 24px)}.layout{grid-template-columns:230px minmax(0,1fr)}.sidebar nav button{font-size:16px}.account span{display:none}}
+@media(max-width:760px){.app{margin:0;border:0;border-radius:0;min-height:100vh}.topbar{border-radius:0}.layout{display:block}.sidebar{border-radius:0;width:270px;box-shadow:12px 0 40px #60313e20}.sidebar nav button{font-size:17px}.heading h1{font-size:30px}.card{box-shadow:0 6px 22px #60313e0d}}
+
+/* Full-width workspace; the elevated card belongs only to the login screen. */
+body{background:#fcf9f8}
+.app{width:100%;max-width:none;margin:0;min-height:100vh;border:0;border-radius:0;box-shadow:none}
+.topbar{border-radius:0;box-shadow:none}
+.sidebar{border-radius:0;box-shadow:none}
+.login{min-height:100vh;min-height:100dvh;padding:40px 20px;background:radial-gradient(ellipse at 15% 15%,#edd1d7 0,transparent 55%),radial-gradient(ellipse at 90% 85%,#f0dce0 0,transparent 50%),#faf2f0}
+.login-card{width:min(480px,100%);padding:40px 38px 32px;border:1px solid #fff;border-radius:28px;background:#fffaf9;box-shadow:0 28px 80px #63384424,0 5px 20px #6338440a}
+.login-card>img{width:190px;height:140px;object-fit:contain;margin:0 auto 24px}
+.login-card .kicker{font-size:12px;letter-spacing:.2em;color:#984954;margin-bottom:12px}
+.login-card h1{font-size:32px;line-height:1.15;margin-bottom:14px;color:#422e32}
+.login-card p{line-height:1.65}
+.login-card .primary{min-height:50px;border-radius:14px;background:#984954;border-color:#984954;font-weight:600;margin:10px 0 22px;box-shadow:0 7px 18px #98495422}
+.login-card .primary:hover{background:#7d3840}
+.login-card>a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-size:14px}
+.login-card>a:hover{text-decoration:underline}
+@media(max-width:760px){.app{margin:0;min-height:100dvh}.login{padding:24px 18px}.login-card{padding:30px 24px 24px;border-radius:24px}.login-card h1{font-size:29px}.login-card>img{width:170px;height:126px;margin-bottom:20px}}

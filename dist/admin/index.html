@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="same-origin">
+<title>Meu painel | Nicole Krause</title>
+<link rel="stylesheet" href="/admin/admin.css?v=5">
+<link rel="stylesheet" href="/admin/sidebar.css?v=7">
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer src="/admin/admin.js?v=11"></script>
+</head>
+<body>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<section id="login-screen" class="login">
+ <div class="login-card">
+  <img src="/assets/logo-transparente.webp" alt="Nicole Krause Massagista">
+  <p class="kicker">MEU ESPAÇO</p><h1>Bem-vinda ao seu painel</h1>
+  <p>Entre com o e-mail que recebeu o convite.</p>
+  <button class="primary" id="login-button">Entrar no painel</button>
+  <p>Esqueceu a senha? Clique em entrar e selecione <strong>Forgot password?</strong></p>
+  <p id="recovery-help" hidden>Defina sua nova senha na janela de acesso. Se o link expirou, solicite um novo.</p>
+  <a href="/">← Voltar ao site</a>
+ </div>
+</section>
+<div id="admin-app" class="app" hidden>
+ <header class="topbar"><button class="sidebar-toggle" id="sidebar-toggle" aria-controls="admin-sidebar" aria-expanded="false" aria-label="Abrir menu lateral">☰</button><div class="brand"><img src="/assets/logo-transparente.webp" alt="Nicole Krause"><div><strong>Nicole Krause</strong><span>Painel administrativo</span></div></div><div class="account"><span id="user-email"></span><a class="button" href="/" target="_blank" rel="noopener">Ver meu site ↗</a><button id="logout-button">Sair</button></div></header>
+ <div class="layout">
+  <button id="sidebar-backdrop" class="sidebar-backdrop" aria-label="Fechar menu lateral" hidden></button><aside class="sidebar" id="admin-sidebar"><p class="kicker">MEU SITE</p><nav aria-label="Seções do painel">
+   <button data-panel="overview" class="active">Visão geral</button>
+   <button data-panel="testimonials">Depoimentos</button>
+   <button data-panel="services">Serviços</button>
+   <button data-panel="texts">Textos do site</button>
+   <button data-panel="photos">Fotos do site</button>
+   <button data-panel="contact">Contato e redes</button>
+  </nav><div class="sidebar-note"><strong>Do seu jeito</strong><p>Edite, confira e publique. As mudanças só aparecem no site depois de salvar.</p></div></aside>
+  <main>
+   <div class="heading"><div><p class="kicker">ADMINISTRAÇÃO</p><h1 id="panel-title">Visão geral</h1><p id="save-hint">Carregando conteúdo…</p></div><button id="save-button" class="primary" disabled>Salvar alterações</button></div>
+   <div id="load-error" class="load-error" role="alert" hidden><p id="load-error-message"></p><button id="retry-load" type="button">Tentar carregar novamente</button></div><section data-view="overview">
+    <div class="stats"><article><span>Depoimentos</span><strong id="testimonial-count">0</strong><small>cadastrados</small></article><article><span>Visíveis no site</span><strong id="visible-count">0</strong><small>publicados</small></article><article><span>Última alteração</span><strong class="date" id="updated-at">—</strong><small>conteúdo salvo</small></article></div>
+    <div class="overview-grid"><article class="card"><h2>O que dizem minhas clientes</h2><p>Cuide de cada depoimento em um só lugar.</p><div id="recent-reviews"></div><button data-panel="testimonials" class="button">Gerenciar depoimentos</button></article><article class="card"><h2>Meu site, atualizado</h2><p>Troque as fotos e mantenha suas informações sempre em dia.</p><div class="quick-actions"><button data-panel="photos">Alterar fotos do site</button><button data-panel="services">Serviços</button>
+   <button data-panel="texts">Editar meus textos</button><button data-panel="contact">Atualizar meus contatos</button></div></article></div>
+   </section>
+   <section data-view="testimonials" hidden><div class="section-head"><div><h2>Depoimentos</h2><p>Adicione uma foto se quiser. Ela é opcional.</p></div><button id="add-testimonial" class="primary" disabled>+ Novo depoimento</button></div><div class="review-workspace"><div id="testimonial-list" class="card"></div><div id="testimonial-editor" class="card"></div></div></section>
+   <section data-view="texts" hidden><div class="section-head"><div><h2>Textos do site</h2><p>Conte sobre seu trabalho em primeira pessoa.</p></div></div><form id="texts-form" class="card fields"></form></section>
+   <section data-view="services" hidden><div class="section-head"><div><h2>Meus serviços</h2><p>Cadastre ou edite serviços, benefícios e etapas do atendimento.</p></div><button id="add-service" class="primary" type="button" disabled>+ Novo serviço</button></div><div id="services-form"></div></section>
+   <section data-view="photos" hidden><h2>Fotos do site</h2><p>Envie JPG, PNG ou WebP. As fotos são otimizadas automaticamente.</p><div id="photos-form" class="photo-grid"></div></section>
+   <section data-view="contact" hidden><h2>Contato e redes sociais</h2><p>Atualizo os contatos em todas as páginas do site.</p><form id="contact-form" class="card fields"></form></section>
+   <p class="bottom-note">As alterações ficam públicas depois de clicar em “Salvar alterações”.</p>
+  </main>
+ </div>
+</div>
+</body></html>

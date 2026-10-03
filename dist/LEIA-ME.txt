@@ -1,0 +1,8 @@
+SITE NICOLE KRAUSE MASSAGISTA
+
+O site público está nesta pasta. O painel administrativo fica em /admin.
+
+IMPORTANTE: para que login e salvamento funcionem, publique o projeto completo
+(não apenas esta pasta) pela Netlify e habilite Identity no modo Invite only.
+
+As instruções detalhadas estão no arquivo README.md da raiz do projeto.
